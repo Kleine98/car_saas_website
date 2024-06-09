@@ -1,14 +1,14 @@
-import './style.css';
+import "./style.css";
 import React from "react";
 
 export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode
+  children,
+}: {
+  children: React.ReactNode;
 }) {
-    return (
-        <html lang="en">
-        <body>{children}</body>
-        </html>
-    )
+  return (
+    <html lang="en">
+      <body className="bg-slate-950 text-white">{children}</body>
+    </html>
+  );
 }
