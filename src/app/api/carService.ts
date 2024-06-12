@@ -10,7 +10,7 @@ export const getCars = async () => {
   }
 };
 
-export const getCarById = async (id) => {
+export const getCarById = async (id: String) => {
   try {
     const response = await axiosInstance.get(`/cars/id/${id}`);
     return response.data;
